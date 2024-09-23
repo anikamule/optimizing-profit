@@ -1,0 +1,85 @@
+# Hannah_Benjamin_benja133_1008991307
+# Anika_Mule_muleanik_1008850325
+
+reset;
+
+model warp.mod;
+data warp.dat;
+
+option solver gurobi;
+
+solve;
+
+# display objective function value and decision variable values
+display profit;
+display x;
+
+# print the objective function value
+printf "The maximum profit is %.2f.", profit > warp.out;
+print "" > warp.out;
+
+# print the decision variable x
+print "" > warp.out;			
+print "The optimal number of shoes to produce for each type are: " > warp.out;
+display x > warp.out;
+
+# print constraint statuses
+print "Constraint statuses (binding/not binding): " > warp.out;
+
+# RawMaterialsBudget
+if RawMaterialsBudget.slack == 0 then
+	print "Constraint RawMaterialsBudget is binding." > warp.out;
+else 
+	print "Constraint RawMaterialsBudget is not binding." > warp.out;
+
+# WarehouseCapacity
+if WarehouseCapacity.slack == 0 then
+	print "Constraint WarehouseCapacity is binding." > warp.out;
+else 
+	print "Constraint WarehouseCapacity is not binding." > warp.out;
+
+# MachineTime
+for {k in K} {
+	if  MachineTime.slack[k] == 0 then
+		print "Constraint MachineTime for machine", k, "is binding." > warp.out;
+	else 
+		print "Constraint MachineTime for machine", k, "is not binding." > warp.out;
+}
+
+# AvailRawMaterials
+for {n in N} {
+	if AvailRawMaterials.slack[n] == 0 then 
+		print "Constraint AvailRawMaterials for material", n, "is binding." > warp.out;
+	else 
+		print "Constraint AvailRawMaterials for material", n, "is not binding." > warp.out;
+}
+
+# round x values to nearest integer
+for {i in I} {
+	let x[i] := round(x[i]);
+}
+
+# violated constraints
+print "" > warp.out;	
+print "The following constraints are violated after rounding: " > warp.out;
+
+if sum{i in I, n in N} x[i]*c[n]*r[i, n] > 10000000 then
+	print "Constraint RawMaterialsBudget is violated." > warp.out;
+
+
+if sum{i in I} x[i] > sum{l in L} w[l] then
+	print "Constraint WarehouseCapacity is violated." > warp.out;
+
+for {k in K} {
+	if (sum {i in I}(1/60) * v[i, k] * x[i] > 20160) then
+	print "Constraint MachineTime is violated." > warp.out;
+}
+
+for {n in N} {
+	if (sum{i in I} x[i] * r[i, n] > a[n]) then
+		print "Constraint AvailRawMaterials for material", n, "is violated." > warp.out;
+	
+}
+
+# close out file
+close warp.out;

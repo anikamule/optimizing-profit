@@ -1,0 +1,49 @@
+# Hannah_Benjamin_benja133_1008991307
+# Anika_Mule_muleanik_1008850325
+
+# read data from Product_Master table here:
+# found Feb_Avg and added to Product_Master; accessing demand from Product_Master
+table Product_Master IN "ODBC" ".\WARP2011W.mdb" "SQL=SELECT Product_Num,Sales_Price,Feb_Avg FROM Product_Master":
+	I <- [Product_Num], p ~ Sales_Price, d ~ Feb_Avg;
+
+read table Product_Master;
+
+# read data from Machine_Master table here:
+table Machine_Master IN "ODBC" ".\WARP2011W.mdb" "SQL=SELECT Machine_Num,OpCost_per_min FROM Machine_Master":
+	K <- [Machine_Num], m ~ OpCost_per_min;
+
+read table Machine_Master;
+
+# read data from RM_Master table here:
+table RM_Master IN "ODBC" ".\WARP2011W.mdb" "SQL=SELECT RM_Num,Cost,S_Quantity FROM RM_Master":
+	N <- [RM_Num], c ~ Cost,  a ~ S_Quantity;
+
+read table RM_Master;
+
+# read Machine_Assign data from table
+# before reading table, we should use let command to assign zero for unused machines
+for {i in I, k in K}{
+	let v[i,k]:=0;
+}
+
+# read the data from Machine_Assign table
+table Machine_Assign IN "ODBC" ".\WARP2011W.mdb" "SQL=SELECT Product_Num,Machine_Num,Avg_Duration FROM Machine_Assign":
+	[Product_Num, Machine_Num], v ~ Avg_Duration; # CLARIFY THIS
+
+read table Machine_Assign;
+
+# read data from BOM table
+for {i in I, n in N}{
+	let r[i,n]:=0;
+}
+
+table BOM IN "ODBC" ".\WARP2011W.mdb" "SQL=SELECT Product_Num,RM_Num,Quantity FROM BOM": 
+	[Product_Num, RM_Num], r ~ Quantity; 
+
+read table BOM;
+
+# read data from Warehouse_Master table
+table Warehouse_Master IN "ODBC" ".\WARP2011W.mdb" "SQL=SELECT Warehouse_Num,Capacity FROM Warehouse_Master": 
+	L <- [Warehouse_Num], w ~ Capacity;
+
+read table Warehouse_Master;

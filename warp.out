@@ -1,0 +1,439 @@
+The maximum profit is 13458506.80.
+
+The optimal number of shoes to produce for each type are: 
+x [*] :=
+SH001   48        SH141   40        SH281  183.843    SH421  124.023
+SH002   44        SH142  141.795    SH282  579.015    SH422   42
+SH003   46        SH143   42        SH283   42        SH423 1085.92
+SH004   42        SH144  154.99     SH284   50        SH424   38
+SH005   46        SH145   44        SH285   48        SH425  473.336
+SH006   42        SH146   48        SH286   46        SH426   44
+SH007   44        SH147  386.378    SH287  711.548    SH427 1033.76
+SH008   44        SH148   44        SH288   46        SH428   48
+SH009   44        SH149   48        SH289   71.3601   SH429   48
+SH010   40        SH150  463.277    SH290   44        SH430  328.157
+SH011  353.854    SH151   48        SH291   46        SH431   40
+SH012   44        SH152   48        SH292   50        SH432   48
+SH013  449.802    SH153   44        SH293   44        SH433   46
+SH014   44        SH154  179.972    SH294   50        SH434   52
+SH015   38.0001   SH155   42        SH295  771.887    SH435  237.023
+SH016   46        SH156   44        SH296   46        SH436   44
+SH017   42        SH157   52        SH297   46        SH437   42
+SH018   52        SH158   50        SH298  314.284    SH438   42
+SH019   42        SH159   44        SH299  181.141    SH439   46
+SH020   42        SH160   40        SH300  622.814    SH440   48
+SH021   46.0001   SH161   48        SH301   46        SH441   42
+SH022   44        SH162   44        SH302   42        SH442   44
+SH023   42        SH163   46        SH303   40        SH443   46
+SH024   42        SH164   44        SH304   44        SH444   44
+SH025  542.795    SH165  745.563    SH305   42        SH445  575.833
+SH026   44        SH166   44        SH306   42        SH446   48
+SH027  463.772    SH167   38        SH307   42        SH447   46
+SH028   42        SH168   44        SH308  289.366    SH448   46
+SH029  191.847    SH169   46        SH309   42        SH449  249.242
+SH030   46        SH170   42        SH310   44        SH450   44
+SH031  405.883    SH171   48        SH311   36        SH451  256.462
+SH032  360.858    SH172   42        SH312  186.643    SH452   40
+SH033   42        SH173  177.165    SH313  650.089    SH453  860.083
+SH034  543.968    SH174   50        SH314   43.1946   SH454   48
+SH035   44        SH175   46        SH315   44        SH455   46
+SH036   48        SH176  431.86     SH316  462.786    SH456   44.0001
+SH037   48        SH177   40        SH317  280.573    SH457   46
+SH038  114.145    SH178   44        SH318   48        SH458   42.0001
+SH039  357.516    SH179  125.366    SH319   42        SH459   40
+SH040  664.441    SH180   40        SH320  542.55     SH460   46
+SH041  150.823    SH181   44        SH321   40        SH461   40
+SH042   38        SH182   42        SH322   48        SH462  263.007
+SH043   46        SH183  113.329    SH323   40        SH463   46
+SH044  313.848    SH184   46        SH324   48        SH464   53.806
+SH045   42        SH185   46        SH325   48        SH465  358.838
+SH046   42        SH186   44        SH326   50        SH466  550.004
+SH047  312.51     SH187  137.612    SH327   44        SH467  429.781
+SH048   40        SH188   48.0001   SH328   42        SH468   42
+SH049   42        SH189   36        SH329  433.325    SH469   42
+SH050  202.912    SH190   42        SH330   44        SH470  215.992
+SH051   38        SH191   46        SH331   40        SH471  396.178
+SH052   46        SH192   44        SH332   50        SH472   46
+SH053   44        SH193   42        SH333   48        SH473  486.25
+SH054   48        SH194   44        SH334  507.647    SH474  382.467
+SH055   42        SH195  258.718    SH335   40        SH475   46
+SH056   42        SH196   46        SH336   44        SH476  237.836
+SH057   98.6848   SH197  534.037    SH337   44        SH477  739.426
+SH058  379.008    SH198   48        SH338  297.981    SH478  394.256
+SH059   46        SH199   46        SH339   46        SH479  297.104
+SH060   46        SH200   42        SH340  344.907    SH480   44
+SH061  630.253    SH201  642.335    SH341   85.4568   SH481   50
+SH062  579.323    SH202   44        SH342   40        SH482  137.597
+SH063   44        SH203  572.727    SH343   50        SH483  649.116
+SH064   46        SH204   44        SH344   46        SH484   46
+SH065   48        SH205  307.715    SH345  276.58     SH485   40
+SH066   40        SH206   42        SH346   38        SH486   44
+SH067   44        SH207   46        SH347   48        SH487   48.0001
+SH068  116.342    SH208   44        SH348   83.5404   SH488   42
+SH069   42        SH209  628.471    SH349   36        SH489  438.731
+SH070   40        SH210   40        SH350   42        SH490  804.483
+SH071   44.0001   SH211   50        SH351   40        SH491  262.823
+SH072  221.321    SH212   36        SH352  400.274    SH492   48
+SH073   42        SH213  247.043    SH353   42        SH493   44
+SH074   44        SH214   42        SH354   42        SH494   48
+SH075   42        SH215   40        SH355   40        SH495   44.0001
+SH076  110.594    SH216   38        SH356   44        SH496   50
+SH077   36        SH217  345.583    SH357   36        SH497  311.696
+SH078   40.0001   SH218   42        SH358   42        SH498   83.507
+SH079   42        SH219   48        SH359  133.419    SH499   42
+SH080  387.673    SH220   38        SH360   52        SH500  600.719
+SH081  295.274    SH221  743        SH361  237.443    SH501  735.352
+SH082  293.331    SH222   46        SH362   42        SH502   48
+SH083   40        SH223  703.769    SH363   42        SH503   42
+SH084   44        SH224  498.415    SH364   44        SH504   46
+SH085   44        SH225  577.742    SH365   40        SH505   42
+SH086   44        SH226  504.872    SH366   48        SH506   38
+SH087   44        SH227  590.451    SH367  269.441    SH507   44
+SH088   42        SH228   48        SH368   44        SH508  687.19
+SH089   46        SH229  102.859    SH369   38        SH509   46
+SH090  470.204    SH230  272.17     SH370   40        SH510   44
+SH091   44        SH231   40        SH371   40        SH511  563.539
+SH092  104.243    SH232   44        SH372   46        SH512  380.434
+SH093   38        SH233  228.292    SH373   56.6037   SH513  194.268
+SH094  333.956    SH234  486        SH374   40        SH514  364.478
+SH095  148.813    SH235  250.198    SH375   48        SH515   48
+SH096  554.302    SH236  409.333    SH376   48        SH516  969.151
+SH097   44        SH237   40        SH377   36        SH517   40
+SH098   46        SH238   59.7231   SH378  210.316    SH518   40
+SH099   50        SH239   46        SH379  319.687    SH519   46
+SH100   40        SH240   46        SH380   40        SH520   44.0001
+SH101   44        SH241   42        SH381   50        SH521  359.798
+SH102   44        SH242   44        SH382   48        SH522   42
+SH103   42        SH243   44        SH383   44        SH523   48
+SH104   44        SH244   63.9004   SH384  817.992    SH524   40
+SH105  574.253    SH245  166.453    SH385   48        SH525  477.941
+SH106   42        SH246   44        SH386   42        SH526   44
+SH107   38.0001   SH247   42        SH387   44        SH527   44
+SH108   42        SH248   42.0001   SH388   42        SH528   46
+SH109   44        SH249  630.983    SH389   44        SH529   44
+SH110  543.861    SH250   44        SH390   46        SH530   42
+SH111   42        SH251   54        SH391   48        SH531   38
+SH112   46        SH252   46        SH392   38        SH532  474.942
+SH113  401.57     SH253  325.36     SH393   42        SH533   48
+SH114   40        SH254  118.059    SH394   42        SH534   40
+SH115   54.6547   SH255   48        SH395  281.097    SH535  568.668
+SH116   46        SH256  923.372    SH396   48        SH536   44
+SH117   46.0001   SH257   48        SH397   42        SH537   46
+SH118  102.379    SH258   48        SH398   42        SH538   42
+SH119   44        SH259   76.4573   SH399  333.917    SH539   44
+SH120   48        SH260   42        SH400   44        SH540  276.855
+SH121 1511.91     SH261  535.8      SH401   48        SH541   34
+SH122   52        SH262  930.7      SH402   42        SH542   46
+SH123  134.967    SH263   42.0001   SH403   48        SH543   76.0516
+SH124   50        SH264   48        SH404   42        SH544   44
+SH125   44        SH265   82.0474   SH405   46        SH545   44.0001
+SH126   44        SH266   40        SH406   42        SH546   48
+SH127   46        SH267   44        SH407  446.382    SH547   46
+SH128   48        SH268   48        SH408   46        SH548   40
+SH129   42        SH269  696.548    SH409   40        SH549   42.0001
+SH130   46        SH270   42        SH410   46        SH550   48
+SH131   42        SH271   44        SH411   42.0001   SH551   42
+SH132  178.42     SH272   40        SH412   48        SH552  118.711
+SH133   48        SH273   50        SH413   44        SH553   42
+SH134   74.6568   SH274   42        SH414   46        SH554   40
+SH135   42        SH275   40        SH415   44        SH555   42
+SH136   44        SH276   42        SH416   42        SH556  595
+SH137   48        SH277  584.443    SH417  347.015    SH557  273.254
+SH138   48        SH278   44        SH418   52
+SH139   44        SH279   38        SH419  260.939
+SH140   42        SH280   42        SH420   48
+;
+
+Constraint statuses (binding/not binding): 
+Constraint RawMaterialsBudget is not binding.
+Constraint WarehouseCapacity is not binding.
+Constraint MachineTime for machine 1 is not binding.
+Constraint MachineTime for machine 2 is not binding.
+Constraint MachineTime for machine 3 is not binding.
+Constraint MachineTime for machine 4 is not binding.
+Constraint MachineTime for machine 5 is not binding.
+Constraint MachineTime for machine 6 is not binding.
+Constraint MachineTime for machine 7 is not binding.
+Constraint MachineTime for machine 8 is not binding.
+Constraint MachineTime for machine 9 is not binding.
+Constraint MachineTime for machine 10 is not binding.
+Constraint MachineTime for machine 11 is not binding.
+Constraint MachineTime for machine 12 is not binding.
+Constraint MachineTime for machine 13 is not binding.
+Constraint MachineTime for machine 14 is not binding.
+Constraint MachineTime for machine 15 is not binding.
+Constraint MachineTime for machine 16 is not binding.
+Constraint MachineTime for machine 17 is not binding.
+Constraint MachineTime for machine 18 is not binding.
+Constraint MachineTime for machine 19 is not binding.
+Constraint MachineTime for machine 20 is not binding.
+Constraint MachineTime for machine 21 is not binding.
+Constraint MachineTime for machine 22 is not binding.
+Constraint MachineTime for machine 23 is not binding.
+Constraint MachineTime for machine 24 is not binding.
+Constraint MachineTime for machine 25 is not binding.
+Constraint MachineTime for machine 26 is not binding.
+Constraint MachineTime for machine 27 is not binding.
+Constraint MachineTime for machine 28 is not binding.
+Constraint MachineTime for machine 29 is not binding.
+Constraint MachineTime for machine 30 is not binding.
+Constraint MachineTime for machine 31 is not binding.
+Constraint MachineTime for machine 32 is not binding.
+Constraint MachineTime for machine 33 is not binding.
+Constraint MachineTime for machine 34 is not binding.
+Constraint MachineTime for machine 35 is not binding.
+Constraint MachineTime for machine 36 is not binding.
+Constraint MachineTime for machine 37 is not binding.
+Constraint MachineTime for machine 38 is not binding.
+Constraint MachineTime for machine 39 is not binding.
+Constraint MachineTime for machine 40 is not binding.
+Constraint MachineTime for machine 41 is not binding.
+Constraint MachineTime for machine 42 is not binding.
+Constraint MachineTime for machine 43 is not binding.
+Constraint MachineTime for machine 44 is not binding.
+Constraint MachineTime for machine 45 is not binding.
+Constraint MachineTime for machine 46 is not binding.
+Constraint MachineTime for machine 47 is not binding.
+Constraint MachineTime for machine 48 is not binding.
+Constraint MachineTime for machine 49 is not binding.
+Constraint MachineTime for machine 50 is not binding.
+Constraint MachineTime for machine 51 is not binding.
+Constraint MachineTime for machine 52 is not binding.
+Constraint MachineTime for machine 53 is not binding.
+Constraint MachineTime for machine 54 is not binding.
+Constraint MachineTime for machine 55 is not binding.
+Constraint MachineTime for machine 56 is not binding.
+Constraint MachineTime for machine 57 is not binding.
+Constraint MachineTime for machine 58 is not binding.
+Constraint MachineTime for machine 59 is not binding.
+Constraint MachineTime for machine 60 is not binding.
+Constraint MachineTime for machine 61 is not binding.
+Constraint MachineTime for machine 62 is not binding.
+Constraint MachineTime for machine 63 is not binding.
+Constraint MachineTime for machine 64 is not binding.
+Constraint MachineTime for machine 65 is not binding.
+Constraint MachineTime for machine 66 is not binding.
+Constraint MachineTime for machine 67 is not binding.
+Constraint MachineTime for machine 68 is not binding.
+Constraint MachineTime for machine 69 is not binding.
+Constraint MachineTime for machine 70 is not binding.
+Constraint MachineTime for machine 71 is not binding.
+Constraint MachineTime for machine 72 is not binding.
+Constraint AvailRawMaterials for material 1 is binding.
+Constraint AvailRawMaterials for material 2 is not binding.
+Constraint AvailRawMaterials for material 3 is not binding.
+Constraint AvailRawMaterials for material 4 is not binding.
+Constraint AvailRawMaterials for material 5 is binding.
+Constraint AvailRawMaterials for material 6 is not binding.
+Constraint AvailRawMaterials for material 7 is not binding.
+Constraint AvailRawMaterials for material 8 is not binding.
+Constraint AvailRawMaterials for material 9 is binding.
+Constraint AvailRawMaterials for material 10 is not binding.
+Constraint AvailRawMaterials for material 11 is not binding.
+Constraint AvailRawMaterials for material 12 is not binding.
+Constraint AvailRawMaterials for material 13 is not binding.
+Constraint AvailRawMaterials for material 14 is not binding.
+Constraint AvailRawMaterials for material 15 is binding.
+Constraint AvailRawMaterials for material 16 is not binding.
+Constraint AvailRawMaterials for material 17 is not binding.
+Constraint AvailRawMaterials for material 18 is binding.
+Constraint AvailRawMaterials for material 19 is not binding.
+Constraint AvailRawMaterials for material 20 is binding.
+Constraint AvailRawMaterials for material 21 is not binding.
+Constraint AvailRawMaterials for material 22 is not binding.
+Constraint AvailRawMaterials for material 23 is not binding.
+Constraint AvailRawMaterials for material 24 is not binding.
+Constraint AvailRawMaterials for material 25 is not binding.
+Constraint AvailRawMaterials for material 26 is not binding.
+Constraint AvailRawMaterials for material 27 is not binding.
+Constraint AvailRawMaterials for material 28 is not binding.
+Constraint AvailRawMaterials for material 29 is not binding.
+Constraint AvailRawMaterials for material 30 is not binding.
+Constraint AvailRawMaterials for material 31 is not binding.
+Constraint AvailRawMaterials for material 32 is not binding.
+Constraint AvailRawMaterials for material 33 is not binding.
+Constraint AvailRawMaterials for material 34 is binding.
+Constraint AvailRawMaterials for material 35 is binding.
+Constraint AvailRawMaterials for material 36 is not binding.
+Constraint AvailRawMaterials for material 37 is not binding.
+Constraint AvailRawMaterials for material 38 is not binding.
+Constraint AvailRawMaterials for material 39 is not binding.
+Constraint AvailRawMaterials for material 40 is not binding.
+Constraint AvailRawMaterials for material 41 is not binding.
+Constraint AvailRawMaterials for material 42 is not binding.
+Constraint AvailRawMaterials for material 43 is binding.
+Constraint AvailRawMaterials for material 44 is not binding.
+Constraint AvailRawMaterials for material 45 is not binding.
+Constraint AvailRawMaterials for material 46 is not binding.
+Constraint AvailRawMaterials for material 47 is not binding.
+Constraint AvailRawMaterials for material 48 is binding.
+Constraint AvailRawMaterials for material 49 is not binding.
+Constraint AvailRawMaterials for material 50 is binding.
+Constraint AvailRawMaterials for material 51 is not binding.
+Constraint AvailRawMaterials for material 52 is not binding.
+Constraint AvailRawMaterials for material 53 is not binding.
+Constraint AvailRawMaterials for material 54 is not binding.
+Constraint AvailRawMaterials for material 55 is binding.
+Constraint AvailRawMaterials for material 56 is binding.
+Constraint AvailRawMaterials for material 57 is not binding.
+Constraint AvailRawMaterials for material 58 is not binding.
+Constraint AvailRawMaterials for material 59 is not binding.
+Constraint AvailRawMaterials for material 60 is not binding.
+Constraint AvailRawMaterials for material 61 is not binding.
+Constraint AvailRawMaterials for material 62 is not binding.
+Constraint AvailRawMaterials for material 63 is not binding.
+Constraint AvailRawMaterials for material 64 is not binding.
+Constraint AvailRawMaterials for material 65 is binding.
+Constraint AvailRawMaterials for material 66 is not binding.
+Constraint AvailRawMaterials for material 67 is not binding.
+Constraint AvailRawMaterials for material 68 is not binding.
+Constraint AvailRawMaterials for material 69 is not binding.
+Constraint AvailRawMaterials for material 70 is binding.
+Constraint AvailRawMaterials for material 71 is not binding.
+Constraint AvailRawMaterials for material 72 is binding.
+Constraint AvailRawMaterials for material 73 is not binding.
+Constraint AvailRawMaterials for material 74 is not binding.
+Constraint AvailRawMaterials for material 75 is not binding.
+Constraint AvailRawMaterials for material 76 is not binding.
+Constraint AvailRawMaterials for material 77 is not binding.
+Constraint AvailRawMaterials for material 78 is not binding.
+Constraint AvailRawMaterials for material 79 is binding.
+Constraint AvailRawMaterials for material 80 is binding.
+Constraint AvailRawMaterials for material 81 is binding.
+Constraint AvailRawMaterials for material 82 is not binding.
+Constraint AvailRawMaterials for material 83 is not binding.
+Constraint AvailRawMaterials for material 84 is not binding.
+Constraint AvailRawMaterials for material 85 is not binding.
+Constraint AvailRawMaterials for material 86 is binding.
+Constraint AvailRawMaterials for material 87 is binding.
+Constraint AvailRawMaterials for material 88 is binding.
+Constraint AvailRawMaterials for material 89 is not binding.
+Constraint AvailRawMaterials for material 90 is not binding.
+Constraint AvailRawMaterials for material 91 is not binding.
+Constraint AvailRawMaterials for material 92 is binding.
+Constraint AvailRawMaterials for material 93 is not binding.
+Constraint AvailRawMaterials for material 94 is not binding.
+Constraint AvailRawMaterials for material 95 is not binding.
+Constraint AvailRawMaterials for material 96 is not binding.
+Constraint AvailRawMaterials for material 97 is binding.
+Constraint AvailRawMaterials for material 98 is binding.
+Constraint AvailRawMaterials for material 99 is not binding.
+Constraint AvailRawMaterials for material 100 is not binding.
+Constraint AvailRawMaterials for material 101 is not binding.
+Constraint AvailRawMaterials for material 102 is not binding.
+Constraint AvailRawMaterials for material 103 is not binding.
+Constraint AvailRawMaterials for material 104 is binding.
+Constraint AvailRawMaterials for material 105 is not binding.
+Constraint AvailRawMaterials for material 106 is binding.
+Constraint AvailRawMaterials for material 107 is binding.
+Constraint AvailRawMaterials for material 108 is not binding.
+Constraint AvailRawMaterials for material 109 is not binding.
+Constraint AvailRawMaterials for material 110 is binding.
+Constraint AvailRawMaterials for material 111 is binding.
+Constraint AvailRawMaterials for material 112 is not binding.
+Constraint AvailRawMaterials for material 113 is binding.
+Constraint AvailRawMaterials for material 114 is not binding.
+Constraint AvailRawMaterials for material 115 is binding.
+Constraint AvailRawMaterials for material 116 is not binding.
+Constraint AvailRawMaterials for material 117 is not binding.
+Constraint AvailRawMaterials for material 118 is binding.
+Constraint AvailRawMaterials for material 119 is binding.
+Constraint AvailRawMaterials for material 120 is binding.
+Constraint AvailRawMaterials for material 121 is binding.
+Constraint AvailRawMaterials for material 122 is not binding.
+Constraint AvailRawMaterials for material 123 is binding.
+Constraint AvailRawMaterials for material 124 is not binding.
+Constraint AvailRawMaterials for material 125 is not binding.
+Constraint AvailRawMaterials for material 126 is binding.
+Constraint AvailRawMaterials for material 127 is not binding.
+Constraint AvailRawMaterials for material 128 is binding.
+Constraint AvailRawMaterials for material 129 is not binding.
+Constraint AvailRawMaterials for material 130 is not binding.
+Constraint AvailRawMaterials for material 131 is binding.
+Constraint AvailRawMaterials for material 132 is not binding.
+Constraint AvailRawMaterials for material 133 is binding.
+Constraint AvailRawMaterials for material 134 is not binding.
+Constraint AvailRawMaterials for material 135 is binding.
+Constraint AvailRawMaterials for material 136 is not binding.
+Constraint AvailRawMaterials for material 137 is not binding.
+Constraint AvailRawMaterials for material 138 is binding.
+Constraint AvailRawMaterials for material 139 is binding.
+Constraint AvailRawMaterials for material 140 is binding.
+Constraint AvailRawMaterials for material 141 is not binding.
+Constraint AvailRawMaterials for material 142 is binding.
+Constraint AvailRawMaterials for material 143 is binding.
+Constraint AvailRawMaterials for material 144 is not binding.
+Constraint AvailRawMaterials for material 145 is not binding.
+Constraint AvailRawMaterials for material 146 is not binding.
+Constraint AvailRawMaterials for material 147 is binding.
+Constraint AvailRawMaterials for material 148 is not binding.
+Constraint AvailRawMaterials for material 149 is binding.
+Constraint AvailRawMaterials for material 150 is binding.
+Constraint AvailRawMaterials for material 151 is not binding.
+Constraint AvailRawMaterials for material 152 is binding.
+Constraint AvailRawMaterials for material 153 is not binding.
+Constraint AvailRawMaterials for material 154 is not binding.
+Constraint AvailRawMaterials for material 155 is binding.
+Constraint AvailRawMaterials for material 156 is not binding.
+Constraint AvailRawMaterials for material 157 is binding.
+Constraint AvailRawMaterials for material 158 is not binding.
+Constraint AvailRawMaterials for material 159 is binding.
+Constraint AvailRawMaterials for material 160 is binding.
+Constraint AvailRawMaterials for material 161 is not binding.
+Constraint AvailRawMaterials for material 162 is binding.
+Constraint AvailRawMaterials for material 163 is binding.
+Constraint AvailRawMaterials for material 164 is not binding.
+Constraint AvailRawMaterials for material 165 is not binding.
+
+The following constraints are violated after rounding: 
+Constraint AvailRawMaterials for material 3 is violated.
+Constraint AvailRawMaterials for material 5 is violated.
+Constraint AvailRawMaterials for material 7 is violated.
+Constraint AvailRawMaterials for material 9 is violated.
+Constraint AvailRawMaterials for material 13 is violated.
+Constraint AvailRawMaterials for material 14 is violated.
+Constraint AvailRawMaterials for material 19 is violated.
+Constraint AvailRawMaterials for material 21 is violated.
+Constraint AvailRawMaterials for material 27 is violated.
+Constraint AvailRawMaterials for material 31 is violated.
+Constraint AvailRawMaterials for material 33 is violated.
+Constraint AvailRawMaterials for material 39 is violated.
+Constraint AvailRawMaterials for material 43 is violated.
+Constraint AvailRawMaterials for material 51 is violated.
+Constraint AvailRawMaterials for material 52 is violated.
+Constraint AvailRawMaterials for material 53 is violated.
+Constraint AvailRawMaterials for material 54 is violated.
+Constraint AvailRawMaterials for material 58 is violated.
+Constraint AvailRawMaterials for material 59 is violated.
+Constraint AvailRawMaterials for material 62 is violated.
+Constraint AvailRawMaterials for material 64 is violated.
+Constraint AvailRawMaterials for material 67 is violated.
+Constraint AvailRawMaterials for material 76 is violated.
+Constraint AvailRawMaterials for material 78 is violated.
+Constraint AvailRawMaterials for material 81 is violated.
+Constraint AvailRawMaterials for material 82 is violated.
+Constraint AvailRawMaterials for material 84 is violated.
+Constraint AvailRawMaterials for material 86 is violated.
+Constraint AvailRawMaterials for material 91 is violated.
+Constraint AvailRawMaterials for material 92 is violated.
+Constraint AvailRawMaterials for material 108 is violated.
+Constraint AvailRawMaterials for material 112 is violated.
+Constraint AvailRawMaterials for material 116 is violated.
+Constraint AvailRawMaterials for material 119 is violated.
+Constraint AvailRawMaterials for material 120 is violated.
+Constraint AvailRawMaterials for material 121 is violated.
+Constraint AvailRawMaterials for material 127 is violated.
+Constraint AvailRawMaterials for material 128 is violated.
+Constraint AvailRawMaterials for material 131 is violated.
+Constraint AvailRawMaterials for material 137 is violated.
+Constraint AvailRawMaterials for material 139 is violated.
+Constraint AvailRawMaterials for material 140 is violated.
+Constraint AvailRawMaterials for material 142 is violated.
+Constraint AvailRawMaterials for material 146 is violated.
+Constraint AvailRawMaterials for material 147 is violated.
+Constraint AvailRawMaterials for material 151 is violated.
+Constraint AvailRawMaterials for material 152 is violated.
+Constraint AvailRawMaterials for material 154 is violated.
+Constraint AvailRawMaterials for material 156 is violated.
+Constraint AvailRawMaterials for material 159 is violated.
+Constraint AvailRawMaterials for material 162 is violated.
